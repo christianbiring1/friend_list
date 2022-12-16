@@ -6,7 +6,7 @@ class CreateFriends < ActiveRecord::Migration[7.0]
       t.string :email
       t.string :linked_in
       t.string :twitter
-      t.belongs_to :User, null: false, foreign_key: true
+      t.belongs_to :user, null: false, foreign_key: true
 
       t.timestamps
     end
